@@ -1,0 +1,57 @@
+1.
+I have multiple .php files, and there's a text that's hard-coded that is somewhere. How do I find the location of it? I use Windows and XAMPP
+
+2.
+Sure, I can help you with that. Here are the steps on how to find the location of a hard-coded text in .php files in Windows using XAMPP:
+
+Open a command prompt window.
+Navigate to the directory where your .php files are located.
+Type the following command:
+findstr /i "hard-coded text" *.php
+Replace hard-coded text with the text you are looking for.
+
+The command will output the location of all the .php files that contain the hard-coded text.
+For example, if you are looking for the hard-coded text "This is a hard-coded text", the command output will look like this:
+
+C:\xampp\htdocs\my-project\index.php
+C:\xampp\htdocs\my-project\another-file.php
+Once you have the location of the hard-coded text, you can then open the file and modify it as needed.
+
+Here are some additional tips:
+
+You can use the findstr command to search for other types of text, such as numbers or keywords.
+You can use the /n option to output the line number of each match.
+You can use the /r option to recursively search all subdirectories.
+I hope this helps! Let me know if you have any other questions.
+
+3.
+Findstr can't seem to find .php files in multiple directories, can you make it check for all directories?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.
+Sure, you can use the /s option with the findstr command to recursively search all subdirectories. For example, the following command will search for the hard-coded text "This is a hard-coded text" in all .php files in the current directory and its subdirectories:
+
+findstr /i "This is a hard-coded text" /s *.php
+The output of the command will be a list of all the .php files that contain the hard-coded text, regardless of where they are located in the directory structure.
+
+Here is an example of the command output:
+
+C:\xampp\htdocs\my-project\index.php
+C:\xampp\htdocs\my-project\another-file.php
+C:\xampp\htdocs\my-project\subfolder\one.php
+C:\xampp\htdocs\my-project\subfolder\two.php
+I hope this helps! Let me know if you have any other questions.
